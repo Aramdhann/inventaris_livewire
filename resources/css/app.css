@@ -1,2 +1,21 @@
 @import "bootstrap";
 @import "bootstrap-icons";
+
+a {
+    color: gray;
+    text-decoration: none;
+    transition: 1s ease-out;
+}
+
+a:hover {
+    color: white;
+}
+
+.btn-logout:hover {
+    opacity: 0.5;
+    transition: 1s ease-out;
+}
+
+.nav-item {
+    padding: 4px 0;
+}
