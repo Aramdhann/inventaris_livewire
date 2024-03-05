@@ -9,7 +9,9 @@
 </head>
 <body>
     <div class="container">
-        {{ $slot }}
+        <div class="d-flex justify-content-center align-items-center min-vh-100">
+            {{ $slot }}
+        </div>
     </div>
 </body>
 </html>
