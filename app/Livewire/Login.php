@@ -2,11 +2,21 @@
 
 namespace App\Livewire;
 
-use Livewire\Component;
+use App\Livewire\Forms\LoginForm;
+use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
+use Livewire\Component;
 
+#[Layout('layouts.guest')]
 class Login extends Component
 {
+    public LoginForm $form;
+
+    public function login()
+    {
+        $this->form->store();
+    }
+
     #[Title('Login')]
     public function render()
     {
